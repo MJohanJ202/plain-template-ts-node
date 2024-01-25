@@ -1,0 +1,20 @@
+{
+	"name": "node-typescript-plain-template",
+	"version": "0.0.1",
+	"description": "",
+	"main": "dist/main.js",
+	"scripts": {
+    "dev": "nodemon --exec ts-node src/main.ts",
+		"build": "tsc --build tsconfig.json",
+		"start": "pnpm build && dist/main.js"
+	},
+	"keywords": ["typescript", "plain", "template", "pnpm"],
+	"author": "J@mJ002",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/node": "20.11.5",
+		"nodemon": "3.0.3",
+		"ts-node": "10.9.2",
+		"typescript": "5.3.3"
+	}
+}
